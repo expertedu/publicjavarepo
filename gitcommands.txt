@@ -1,0 +1,80 @@
+1) clone the publicrepository into your local location 
+   git clone https://github.com/sureshgithub-com/publicjavarepo.git
+   (code will be checkedout with the name of folder publicjavarepo)
+2) change to publicjavarepo folder
+    cd publicjavarepo
+3) create a new branch
+    git checkout -b <newbranchname> <remotebranchname>
+    git checkout -b PrakashRathod remotes/origin/release/1.0.0
+
+   after checkout your prompt should display as follows:
+    DELL@DESKTOP-DHO24NL MINGW64 /d/class programs/programs/publicjavarepo (prakashrathod)
+
+
+4) create any java program
+   vi sample.java
+    (file created)
+5) git status
+
+   this should show the output given below:
+
+   Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.java
+
+   that means, you have not yet added this to your branch for tracking (stashed)
+
+6) add the newly created file to stash
+   git add sample.java
+
+	$ git add sample.java
+	warning: in the working copy of 'sample.java', LF will be replaced by CRLF the next time Git touches it
+
+
+   
+7) try to see the status again now after added to stash
+   git status
+	
+
+	$ git status
+	On branch prakashrathod
+	Your branch is up to date with 'origin/release/1.0.0'.
+
+	Changes to be committed:
+  	(use "git restore --staged <file>..." to unstage)
+        new file:   sample.java
+8) commit the file to the repository
+   git commit -a -m "PrakshRathod  - my first program"
+
+	$ git commit -a -m "PrakashRathod - my first program"
+
+	[prakashrathod 268be72] PrakashRathod - my first program
+ 	1 file changed, 8 insertions(+)
+ 	create mode 100644 sample.java
+9) push the code to repository
+     syntax: git push origin <branchname>
+     git push origin PrakshRathod
+
+$ git push origin prakashrathod
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 424 bytes | 212.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'prakashrathod' on GitHub by visiting:
+remote:      https://github.com/sureshgithub-com/publicjavarepo/pull/new/prakashrathod
+remote:
+To https://github.com/sureshgithub-com/publicjavarepo.git
+ * [new branch]      prakashrathod -> prakashrathod
+
+
+10) you should be able to see your branch on git hub repository
+
+11) create a pull request on the git hub by clicking on 'create pull request'
+     make sure that 'release/1.0.0' on the left side and 'PrakashRathod'(your branch name) on the right side
+
+12) To revert the changes made
+     git revert <commit-id>
+     git revert 1a234
