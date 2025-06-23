@@ -9,27 +9,24 @@ public class taxcal {
         if (income > 1500000){
             tax += (income - 1500000)*0.30f;
             income = 1500000;
-            System.out.println("30 = "+tax);
+            // System.out.println("30 = "+tax);
         }
         if (income > 1000000){
             tax += (income - 1000000)*0.20f;
             income = 1000000;
-            System.out.println("20 = "+tax);
-
+            // System.out.println("20 = "+tax);
         }
         if (income > 750000){
             tax += (income - 750000)*0.15f;
             income = 750000;
-            System.out.println("15 = "+tax);
-
+            // System.out.println("15 = "+tax);
         }
         if (income > 500000){
-            System.out.println(tax);
-            System.out.println(income);
+            // System.out.println(tax);
+            // System.out.println(income);
             tax += (income - 500000)*0.10f;
             income = 500000;
-            System.out.println("10 = "+tax);
-
+            // System.out.println("10 = "+tax);
         }
         // if(num <= 500000){
         //     tax = 0;
