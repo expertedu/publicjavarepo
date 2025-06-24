@@ -1,39 +1,54 @@
 import java.util.Scanner;
 
-public class IncomeTaxCalculator
+public class IncomeTaxCalculator 
 {
- public static void main(String... args)
-  {
-    Scanner scanner = new Scanner(System.in);
+	public static void main (String ... args)
 
-    System.out.print("Enter your annual salary (in Rs. ): " );
-    double salary = scanner.nextDouble();
-    double tax = calculateTax(salary);
+	{
+		Scanner sc = new Scanner (System.in);
 
-    System.out.println("Total income tax payable: Rs. " + tax);
-    scanner.close();
-  }
-    public static double calculateTax(double salary)
-    {
-     double tax = 0;
+		System.out.print("Enter Your Annual Salary in Rupees: ");
 
-     if (salary <= 5_00_000){
-	 tax = 0;
-     }
-	else if (salary <=7_50_000){
-	 tax = (salary - 5_00_000) * 0.10;
-	}
-	else if (salary <=10_00_000){
-         tax = (2_50_000 * 0.10) + (salary - 7_50_000) * 0.15;
-	}
-	else if (salary <=15_00_000){
-         tax = (2_50_000 * 0.10) + (2_50_000 * 0.15) + (salary - 10_00_000) * 0.20;
-	}
-	else {
-	 tax = (2_50_000 * 0.10) + (2_50_000 * 0.15) + (5_00_000 * 0.20) + (salary - 15_00_000) * 0.30;
+		double income = sc.nextDouble();
+
+		double tax= 0;
+
+		if (income <= 500000)
+		{
+			tax=0;
+
+			System.out.print("Total tax as per your annual salary "+income +" is : "+ tax);
+
+		}else if ( income > 500000 && income <= 750000){
+
+			tax = (income - 500000) * 0.10;
+
+			System.out.print("Total tax as per your annual salary "+income +" is : "+ tax);
+
+		}else if (income >750000 && income <= 1000000){
+
+			tax = (250000 * 0.10 ) + ( income - 750000) * 0.15 ;
+
+		        System.out.print("Total tax as per your annual salary "+income +" is : "+ tax);
+		
+		}else if (income > 1000000 && income <= 1500000){
+
+			tax = (250000 * 0.10 ) + ( 250000 * 0.15 ) + (income - 1000000) * 0.20 ;
+
+			System.out.print("Total tax as per your annual salary "+income +" is : "+ tax);
+
+		}else {
+			
+			tax = (250000 *0.10 ) + ( 250000 * 0.15 ) + (500000 * 0.20 ) + ( income - 1500000) * 0.30 ;
+
+			System.out.print("Total tax as per your annual Salary "+income +" is : "+ tax); }
+
 	}
 
-	return tax;
-    }
 }
+
+
+
+				
+
 
