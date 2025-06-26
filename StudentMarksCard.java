@@ -1,3 +1,5 @@
+package publicjavarepo;
+
 import java.util.*;
 public class StudentMarksCard {
     public static void main(String[] args) {

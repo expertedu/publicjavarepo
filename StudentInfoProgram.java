@@ -1,3 +1,5 @@
+package publicjavarepo;
+
 import java.util.*;
 class StudentInfoProgram{
 	public static void main(String... args){
