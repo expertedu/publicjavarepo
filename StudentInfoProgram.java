@@ -9,9 +9,9 @@ class StudentInfoProgram{
 		int totalMarks=300;
 		double marksObtained,percentage;
 		System.out.print("Enter the Student Name:");
-		studentName=sc.nextLine();
+		studentName=sc.nextLine();//.nextLine();
 		System.out.print("Enter the Student Roll Number:");
-                rollNum=sc.nextInt();
+        rollNum=sc.nextInt();
 		System.out.println("Enter the marks of all subject:");
 		System.out.print("Subject s1 mark:");
 		s1=sc.nextInt();
