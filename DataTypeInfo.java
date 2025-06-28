@@ -1,3 +1,5 @@
+package publicjavarepo;
+
 class DataTypeInfo {
     public static void main(String[] args) {
         System.out.println("Java Primitive Data Types: Size and Range");
