@@ -18,7 +18,9 @@ public class ScannerDemo {
         //sc.nextLine();
 
         // string Using nextLine()
+        
         System.out.print("Enter your full address: ");
+        sc.skip("\r\n|\r|\n");
         String address = sc.nextLine();
 
        
