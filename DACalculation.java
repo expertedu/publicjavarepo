@@ -11,17 +11,17 @@ public class DACalculation {
         double da = 0;
 
         if (salary <= 25000) {
-            da = salary * 0.10;
+            da = salary *  (10 / 100.00);
             if (da < 2500) {
                 da = 2500;
             }
         } else if (salary <= 50000) {
-            da = salary * 0.20;
+            da = salary *  (20 / 100.00);
             if (da > 7500) {
                 da = 7500;
             }
         } else {
-            da = salary * 0.30;
+            da = salary *  (30 / 100.00);
             if (da > 12000) {
                 da = 12000; 
             }
