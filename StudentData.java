@@ -7,7 +7,7 @@ public class StudentData {
         // student details
         System.out.print("Enter Roll Number: ");
         int rollNo = sc.nextInt();
-
+        sc.skip("\r\n|\r|\n");
         sc.nextLine(); 
 
         System.out.print("Enter Name: ");
