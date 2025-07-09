@@ -1,4 +1,5 @@
-String name;
+public class ConstructorDemo {
+		String name;
 	    int id;
 	    static String company;
 
@@ -25,7 +26,7 @@ String name;
 	    }
 
 	    public static void main(String[] args) {
-	        System.out.println("Main Starts");
+	        System.out.println("Main Starts\n");
 
 	        ConstructorDemo s1 = new  ConstructorDemo("Rama", 101);
 	        s1.show();
